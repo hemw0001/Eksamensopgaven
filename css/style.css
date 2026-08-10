@@ -1,0 +1,517 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+}
+
+img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 30px;
+}
+
+nav {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  margin: 30px 0 40px 0;
+  /* margin-top:30; flytter menuen lidt ned */
+}
+
+/* links i menuen */
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 55px; /*skaber luft omkring menuen*/
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-family: "Playfair Display", serif;
+}
+
+/*effekt når musen holdes over menu-link*/
+nav a:hover {
+  background-color: #ddf5ec;
+  color: #333;
+}
+
+/*effekt når der klikkes på menupunkt*/
+nav a:active,
+nav a :active {
+  background-color: #777;
+  color: white;
+  box-shadow: 0 2px 6px rgba(74, 58, 255, 0.3);
+}
+
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+  color: #444;
+  font-family: "Playfair Display", serif;
+}
+
+h2 {
+  color: #444;
+  margin-top: 20px;
+  font-size: 25px;
+  font-family: "playfair Display", serif;
+  margin-bottom: 10px;
+}
+
+img {
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-right: 40px;
+}
+
+.logo img {
+  width: 125px;
+  height: auto;
+  margin-top: -40px; /*flytter logoet længere op*/
+  margin-left: 0; /*flytter logoet længere mod venstre*/
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+}
+/*tekstomåde*/
+.hero-tekst {
+  flex: 1;
+  text-align: left;
+  padding-left: 0;
+  margin-left: 0;
+  font-weight: 400;
+  max-width: 500px;
+}
+
+.hero-tekst h1 {
+  font-size: 56px;
+  font-family: "playfair Display", serif;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: left;
+}
+/*brødtekst på forsiden*/
+.hero-tekst p {
+  text-align: left;
+  max-width: 520px;
+  line-height: 1.6;
+  font-size: 16px;
+  flex: 1;
+  color: #444;
+
+  margin-top: 40px;
+}
+
+.hero img {
+  width: 600px;
+  height: auto;
+}
+
+.hero-billede {
+  position: relative;
+  display: inline-block;
+  transform: translateX(60px);
+}
+
+.boxs1 {
+  position: absolute;
+  width: 45%;
+  height: 45%;
+  background-color: #ddf5ec;
+  border-radius: 20px;
+  top: -30px;
+  left: -30px;
+  z-index: -1;
+}
+
+.boxs2 {
+  position: absolute;
+  width: 45%;
+  height: 45%;
+  background-color: #ddf5ec;
+  border-radius: 20px;
+  bottom: -10px;
+  right: 10px;
+  z-index: -1;
+}
+
+/*placerer tekst og billede ved siden af hinanden*/
+.hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 200px;
+  padding: 160px 50px 60px;
+}
+
+.tema-indhold {
+  max-width: 1080px;
+  margin-left: 150px;
+  padding: 20px;
+}
+
+.tema-indhold h1 {
+  padding-bottom: 100px;
+  text-align: center;
+  font-size: 42px;
+}
+
+.tema-indhold p {
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.menu-knap {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.link {
+  color: #444;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.video-afsnit {
+  margin-top: -15px;
+  margin-bottom: 30px;
+}
+
+.tema-række {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.proces-h2 {
+  padding-top: 38px;
+}
+
+.tema-teskt {
+  flex: none;
+  color: #444;
+  width: 500px;
+  font-weight: 400;
+}
+.intro-tekst {
+  max-width: 580px;
+  color: #444;
+}
+.brødtekst {
+  color: #444;
+  line-height: 1.6;
+}
+.fremhæve {
+  color: #444;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: -20px;
+}
+
+.tema-billeder {
+  width: 450px;
+  margin-top: 120px;
+  transform: translateX(40px);
+}
+
+.logo-billeder {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-top: -22px;
+}
+
+.logo-billeder img {
+  width: 120px;
+  height: auto;
+  margin-top: -10px;
+}
+
+.Præsentationskort {
+  width: 400px;
+  margin-top: 90px;
+  height: auto;
+  transform: scale(1.05);
+}
+.tema2-billeder {
+  width: 400px;
+  margin-top: 0;
+  transform: translateX(-20px);
+}
+
+.tema2-billeder img:first-child {
+  width: 200px;
+  height: auto;
+  margin-top: 50px;
+}
+.tema2-billeder .css-øverlser {
+  width: 300px;
+  height: auto;
+}
+
+.tema2-tekst {
+  width: 670px;
+  transform: translateX(-40px);
+  margin-right: 90px;
+}
+
+.tema2-tekst p {
+  margin-bottom: 25px;
+  color: #444;
+}
+
+.tema3-teskt {
+  width: 670px;
+  transform: translateX(-40px);
+  color: #444;
+}
+
+.tema3-billeder {
+  width: 420px;
+  transform: translateX(80px);
+  min-width: 420px;
+  margin-top: 80px;
+}
+
+.tema3-billeder img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.tema4-tekst {
+  width: 670px;
+  transform: translateX(-40px);
+  color: #444;
+}
+
+.tema4-billeder {
+  width: 420px;
+  transform: translateX(90px);
+  min-width: 420px;
+  margin-top: -15px;
+}
+.tema4-billeder img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.tema5-tekst {
+  width: 670px;
+  transform: translateX(-40px);
+  color: #444;
+}
+
+.tema5-tekst p {
+  color: #444;
+}
+
+.tema5-billeder {
+  width: 420px;
+  transform: translateX(90px);
+  min-width: 420px;
+  margin-top: 70px;
+}
+.tema5-billeder img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 40px;
+}
+.tema5-tekst img {
+  margin-top: 30px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 0;
+  color: #777;
+  font-size: 14px;
+  margin-top: 80px;
+  border-top: 1px solid #eee;
+}
+
+.wireframes-billeder {
+  width: 420px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.wireframes-billeder img {
+  width: 200px;
+  height: auto;
+  display: block;
+}
+
+.tema6-billeder {
+  width: 420px;
+  transform: translateX(90px);
+  margin-top: 120px;
+}
+
+.Prototype-billeder {
+  display: flex;
+  gap: 20px;
+}
+
+.Prototype-billeder img {
+  width: 240px;
+  height: auto;
+}
+
+footer p {
+  margin: 2px 0;
+}
+
+@media (max-width: 768px) {
+  /* HEADER */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  /* LOGO */
+  .logo {
+    text-align: left;
+  }
+
+  /* MOBILMENU */
+  .menu-knap {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  nav.vis {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    position: absolute;
+    top: 90px;
+    right: 10px;
+
+    width: 180px;
+    padding: 15px 20px;
+
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    z-index: 1000;
+  }
+  nav.vis a {
+    white-space: nowrap;
+  }
+
+  nav.vis a {
+    margin: 0;
+    text-align: left;
+  }
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  /* OVERSKRIFT */
+  h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  /* INDHOLD */
+  .tema-indhold {
+    padding: 20px;
+  }
+
+  /* TEKST + BILLEDER UNDER HINANDEN */
+  .tema-række {
+    display: block;
+  }
+
+  .tema6-tekst {
+    width: 100%;
+  }
+
+  .tema6-billeder {
+    width: 100%;
+    transform: none;
+    margin-top: 30px;
+  }
+
+  /* WIREFRAMES */
+  .wireframes-billeder {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+  }
+
+  .wireframes-billeder img {
+    width: calc(50% - 5px);
+    height: auto;
+  }
+
+  /* ALLE ANDRE BILLEDER */
+  .logo-billeder,
+  .farvevalg-billede,
+  .Prototype-billeder {
+    width: 100%;
+    transform: none;
+  }
+
+  .logo-billeder img,
+  .farvevalg-billede img,
+  .Prototype-billeder img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* PROTOTYPE-BILLEDER VED SIDEN AF HINANDEN */
+  .Prototype-billeder {
+    display: flex;
+    gap: 10px;
+  }
+
+  .Prototype-billeder img {
+    width: calc(50% - 5px);
+  }
+
+  /* FOOTER */
+  footer {
+    margin-top: 40px;
+  }
+  .hero {
+    display: block;
+  }
+
+  .hero-tekst {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-billede {
+    width: 100%;
+    margin-top: 30px;
+    transform: none;
+  }
+}
