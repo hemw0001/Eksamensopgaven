@@ -14,6 +14,7 @@ img {
 
 nav {
   text-align: center;
+  white-space: nowrap;
   margin-top: 30px;
   margin-bottom: 40px;
   margin: 30px 0 40px 0;
@@ -24,7 +25,7 @@ nav {
 nav a {
   text-decoration: none;
   color: #333;
-  padding: 10px 55px; /*skaber luft omkring menuen*/
+  padding: 10px 50px; /*skaber luft omkring menuen*/
   border-radius: 8px;
   transition: all 0.3s ease;
   font-weight: 500;
@@ -513,5 +514,92 @@ footer p {
     width: 100%;
     margin-top: 30px;
     transform: none;
+  }
+  .tema-indhold {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .tema-indhold h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    padding-bottom: 50px;
+    overflow-wrap: break-word;
+  }
+
+  .tema-række {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+    transform: none;
+  }
+
+  .tema-tekst {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    transform: none;
+    padding: 0;
+  }
+
+  .tema-række img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+  .tema-billeder {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 40px;
+    transform: none;
+  }
+  .hero {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+  .hero-billede img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .logo-billeder {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .logo-billeder img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+  }
+  .Prototype-billeder {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .Prototype-billeder img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .wireframes-billeder {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .wireframes-billeder img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
   }
 }
